@@ -6,4 +6,5 @@ class Post < ApplicationRecord
 	validates :content, presence: true, uniqueness: {case_sensitive:false}
 
 	belongs_to :user
+	has_many :comments
 end
